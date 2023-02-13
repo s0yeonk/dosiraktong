@@ -1,4 +1,9 @@
 @charset "utf-8";
+/* 절대로 'utf-8' 줄은 1번줄에 배치  */
+
+/* 글꼴 Import 진행 */
+@import url("./font/font.css");
+
 *{
   margin: 0;
   padding: 0;
@@ -14,4 +19,56 @@ a{
 img{
   border:0; /* 옛날 사이트는 이미지에 보더가 들어감*/
   vertical-align: middle; /*이미지가 들어가도 중앙정렬되게 */
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-family: "Poppins","Pretendard","sans-serif";
+  color: #222;
+  font-size: 16px; /* 본문사이즈 폰트사이즈 */
+  line-height: 1; /* 행간 */
+  letter-spacing: 0; /* 자간 / 보통은 -0.65 */
+  word-break: keep-all; /* 단어를 지켜서 줄내림을 하는 것 -필수 */
+}
+
+/* 레이아웃 */
+.wrap{
+  position: relative;
+  display: block;
+}
+/* GNB */
+.header{
+  position: relative;
+  display: block;
+}
+
+/* BANNER */
+.banner{
+  position: relative;
+  display: block;
+}
+
+/* 서비스  */
+.service{
+  position: relative;
+  display: block;
+}
+
+/* 서비스 정보 */
+.info{
+  position: relative;
+  display: block;
+}
+
+/* 서비스 카테고리 */
+.categories{
+  position: relative;
+  display: block;
+}
+
+/* FOOTER */
+.footer{
+  position: relative;
+  display: block;
 }
