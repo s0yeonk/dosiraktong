@@ -1,0 +1,17 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding, margin 안쪽으로 */
+}
+ul,li{
+  list-style: none;
+}
+a{
+  color:#333; 
+  text-decoration: none;
+}
+img{
+  border:0; /* 옛날 사이트는 이미지에 보더가 들어감*/
+  vertical-align: middle; /*이미지가 들어가도 중앙정렬되게 */
+}
