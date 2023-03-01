@@ -51,11 +51,11 @@
         <script src="js/html5shiv.js"></script>
     <![endif]-->
     <!-- CSS3 지원 -->
-    <script src="js/prefixfree.min.js"></script>
+    <script src="js/prefixfree.min.js" defer></script>
     <!-- Viewport 지원 -->
-    <script src="js/respond.min.js"></script>
+    <script src="js/respond.min.js" defer></script>
     <!-- 사용자 스크립트 -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -161,11 +161,38 @@
                 <h2><span>도시락통</span> 서비스 둘러보기</h2>
                 <div class="service-contents">
                     <div class="service-left">
-                        <a href="#" class="service-link-1" data-aos="flip-left" data-aos-duration="500">왼쪽</a>
+                        <a href="#" class="service-link-1" >
+                            <div class="service-img-wrap">
+                                <img src="images/main_service_img1.jpg"class="main-service-img" alt="">
+                            </div>
+                            <div class="main-service-desc-wrap">
+                                <h4>와이파이도시락</h4>
+                                <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵!</p>
+                                <p class="main-service-more">바로가기</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="service-right">
-                        <a href="#" class="service-link-2" data-aos="fade-left" data-aos-duration="1000">상단</a>
-                        <a href="#" class="service-link-3" data-aos="fade-up">하단</a>
+                        <a href="#" class="service-link-2">
+                            <div class="service-img-wrap">
+                                <img src="images/main_service_img2.jpg" class="service-img" alt="">
+                            </div>
+                            <div class="main-service-desc-wrap">
+                                <h4>도시락유심</h4>
+                                <p>별도 단말기 소지 없이 유심 교체로 간편한 해외 데이터 사용</p>
+                                <p class="main-service-more">바로가기</p>
+                            </div>
+                        </a>
+                        <a href="#" class="service-link-2">
+                            <div class="service-img-wrap">
+                                <img src="images/main_service_img3.jpg" class="service-img" alt="">
+                            </div>
+                            <div class="main-service-desc-wrap">
+                                <h4>도시락eSIM</h4>
+                                <p>해외 데이터 사용 손쉽게 구매부터 QR 설치까지 온라인으로 끝!</p>
+                                <p class="main-service-more">바로가기</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

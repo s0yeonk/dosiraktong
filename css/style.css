@@ -497,10 +497,12 @@ html.active {
 }
 .service h2 {
   text-align: center;
-  /* 글자 셋팅 */
+  font-family: "Godo", "Notokr";
+    font-size: 38px;
+    margin-bottom: 30px;
 }
 .service h2 span {
-  /* 글자색만 수정 */
+  color: #3a68b2;
 }
 .service-contents {
   display: flex;
@@ -520,24 +522,68 @@ html.active {
 }
 .service-link-1 {
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
-  background: url("../images/main_service_img1.jpg") no-repeat center;
-  background-size: cover;
+}
+.service-img-wrap{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.service-img-wrap img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: opcity .3s, transform .3s;
+}
+.service-link-1:hover .main-service-img{
+  transform: rotate(1deg) scale(1.1);
+  opacity: .8;
 }
 .service-link-2 {
   display: block;
+  position: relative;
   width: 100%;
   height: calc(50% - 10px);
-  background: url("../images/main_service_img2.jpg") no-repeat center;
-  background-size: cover;
 }
-.service-link-3 {
-  display: block;
+.service-link-2:hover .service-img{
+  transform: rotate(1deg) scale(1.1);
+  opacity: .8;
+}
+.main-service-desc-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: calc(50% - 10px);
-  background: url("../images/main_service_img3.jpg") no-repeat center;
-  background-size: cover;
+  height: 100%;
+  padding: 60px;
+  color: #fff;
+}
+.main-service-desc-wrap h4{
+  margin-bottom: 3px;
+  font-size: 26px;
+  line-height: 1.4;
+}
+.main-service-desc-wrap p{
+  font-size: 17px;
+  font-weight: 300;
+}
+.main-service-more{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 140px;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px 0 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 1px solid rgba(255,255,255,.3);
 }
 @media screen and (max-width: 1460px) {
   .service-contents {
@@ -573,7 +619,9 @@ html.active {
     width: 100%;
     justify-content: center;
   }
-
+  .service .inner h2{
+    font-size: 30px;
+  }
   .service-link-1 {
     max-width: 660px;
 
