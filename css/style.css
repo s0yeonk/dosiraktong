@@ -876,20 +876,20 @@ html.active {
   background-size: contain;
 }
 .clink-1::after{
-  background-image: url('/images/main_banner_figure1.png');
+  background-image: url('../images/main_banner_figure1.png');
   right: -30px;
   bottom: 10px;
   max-width: 304px;
 }
 
 .clink-2::after{
-  background-image: url('/images/main_banner_figure2.png');
+  background-image: url('../images/main_banner_figure2.png');
   right: -30px;
   bottom: 10px;
   max-width: 304px;
 }
 .clink-3::after{
-  background-image: url('/images/main_banner_figure3.png');
+  background-image: url('../images/main_banner_figure3.png');
   right: -30px;
   bottom: 10px;
   max-width: 304px;
