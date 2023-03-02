@@ -98,6 +98,7 @@ html.active {
 .gotop.active{
   opacity: 1;
   transition: opacitiy .3s;
+  cursor: pointer;
 }
 .logo {
   position: absolute;
