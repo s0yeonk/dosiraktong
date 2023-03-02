@@ -4,6 +4,7 @@ window.onload = function(){
     AOS.init();
 
     // waypoint 활용해보기 ⭐️⭐️⭐️
+    //smooth go top Btn!
     let goTop=document.querySelector('.gotop');
     let visual=document.querySelector('.service');
     new Waypoint({
@@ -18,8 +19,11 @@ window.onload = function(){
         // 해당 div의 화면상에 얼마나 보이는가?
         offset:'50%'
     })
-
-
+    const $topBtn=document.querySelector('.gotop');
+    console.log($topBtn)
+    $topBtn.addEventListener('click',()=>{
+        window.scrollTo({top:0,behavior:'smooth'})
+    })
     let htmlTag = document.querySelector("html");
     // 모바일 메뉴 버튼 처리
     // 1. 모바일 버튼을 찾아서 저장한다.

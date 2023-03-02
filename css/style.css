@@ -83,18 +83,21 @@ html.active {
 .gotop{
   position: fixed;
   right: 50px;
-  bottom: 100px;
-  width: 100px; height: 100px;
+  bottom: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
   z-index: 9999;
   border: 0;
-  background-color: blue;
+  color:#fff;
+  background-color:#3056a1;
   opacity: 0;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: bottom .3s;
 }
 .gotop.active{
   opacity: 1;
-  background-color: rebeccapurple;
+  transition: opacitiy .3s;
 }
 .logo {
   position: absolute;
@@ -983,8 +986,52 @@ html.active {
 .footer {
   position: relative;
   display: block;
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
   background: #222;
-  color: #666;
+  color: #909090;
+}
+.footer .footer-list{
+  display: flex;
+  justify-content: center;
+  line-height: 1.7em;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.footer .footer-list li{
+  font-size: 15px;
+  padding: 0 18px;
+  position: relative;
+}
+.footer .footer-list .footer-item::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background-color: #444;
+  transform: translateY(-50%);
+}
+.footer-service{
+  font-size: 15px;
+  line-height: 1.5em;
+  word-break: keep-all;
+}
+.footer-copy{
+  margin-top: 50px;
+  color: #444;
+  font-size: 14px;
+}
+@media screen and (max-width:640px){
+  .footer-list{
+    flex-direction: column;
+  }
+  .footer-list li{
+    font-size: 13px;
+  }
+  .footer-service{
+    font-size: 13px;
+  }
 }
