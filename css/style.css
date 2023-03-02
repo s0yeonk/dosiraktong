@@ -855,17 +855,83 @@ html.active {
   display: block;
   width: 100%;
   height: 100%;
+  padding: 30px;
+  border-right: 1px solid #dadfe6;
+  background-color: #eee;
+  transition: background-color .3s, color .3s;
 }
-.clink-1 {
-  background: hotpink;
+.category-link::after{
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
 }
-.clink-2 {
-  background: yellowgreen;
-}
-.clink-3 {
-  background: yellow;
+.clink-1::after{
+  background-image: url('/images/main_banner_figure1.png');
+  right: -30px;
+  bottom: 10px;
+  max-width: 304px;
 }
 
+.clink-2::after{
+  background-image: url('/images/main_banner_figure2.png');
+  right: -30px;
+  bottom: 10px;
+  max-width: 304px;
+}
+.clink-3::after{
+  background-image: url('/images/main_banner_figure3.png');
+  right: -30px;
+  bottom: 10px;
+  max-width: 304px;
+}
+.category-link:hover{
+  color: #fff;
+}
+.category-link:hover .category-more{
+  border-bottom: 2px solid #fff;
+}
+.category-link.clink-1:hover{
+  background-color: #3891b2;
+}
+.category-link.clink-2:hover{
+  background-color: #db574f;
+}
+.category-link.clink-3:hover{
+  background-color: #f0b23a;
+}
+.category-link h6{
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.category-link .category-txtbox{
+  font-size: 17px;
+  opacity: .8;
+  z-index: 1;
+  margin-bottom: 42px;
+  position: relative;
+  line-height: 1.5em;
+  word-break: keep-all;
+}
+.category-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 2px solid #222;
+  letter-spacing: -1px;
+  transition: border .3s;
+}
+ /* 카테고리 팝업 */
 .category-pop {
   position: absolute;
   display: none;
@@ -881,12 +947,35 @@ html.active {
 .category-pop.active {
   display: none !important;
 }
+@media screen and (max-width: 1280px) {
+  .category-link h6{
+    font-size: 24px;
+  }
+  .category-link .category-txtbox{
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .category-pop {
     display: flex;
   }
   .category{
     margin-top: 100px;
+  }
+  .category-link::after{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .category-link h6{
+    font-size: 20px;
+  }
+  .category-link .category-txtbox{
+    font-size: 15px;
+  }
+  .category-link .category-more{
+    font-size: 14px;
+    height: 40px;
   }
 }
 

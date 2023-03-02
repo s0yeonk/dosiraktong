@@ -240,7 +240,7 @@ window.onload = function(){
         loop: true,
         slidesPerView: 1,
         breakpoints: {
-            480: {      
+            640: {      
                 slidesPerView: 2,
                 spaceBetween: 0,
             },
